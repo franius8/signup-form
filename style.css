@@ -46,13 +46,26 @@ body {
     font-size: 1.5rem;
 }
 
-.emspan {
+#bottomtext {
+    font-size: 1.2rem;
+    margin-right: auto;
+}
+
+.emspan, a {
     color: rgb(235, 101, 39);
 }
 
-.emspan:hover {
+a {
+    text-decoration: underline;
+    text-decoration-color: rgb(235, 101, 39);
+    text-decoration-thickness: 2px;
+    font-weight: bold;
+}
+
+.emspan:hover, a:hover {
     color: white;
     cursor: pointer;
+    text-decoration-color: white;
 }
 
 #logodiv {
