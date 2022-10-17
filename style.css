@@ -141,3 +141,17 @@ form div input:focus {
     border-color: rgb(235, 101, 39);
     box-shadow: 0 0 5px rgb(235, 101, 39);
 }
+
+form div input:invalid:focus {
+    background-color: rgba(235, 101, 39, 0.2);
+    outline: none !important;
+    border-color: rgb(255, 0, 0);
+    box-shadow: 0 0 5px rgb(255, 0, 0);
+}
+
+form div input:valid {
+    background-color: rgba(235, 101, 39, 0.2);
+    outline: none !important;
+    border-color: rgb(0, 255, 0);
+    box-shadow: 0 0 5px rgb(0, 255, 0);
+}
