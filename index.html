@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Signup form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div id="leftdiv">
@@ -21,7 +22,7 @@
                     <p>You <span class="emspan"><b>know</b></span> you want to.</p>
             </div>
             <div id="form">
-                <form action="#" method="post">
+                <form action="#" onsubmit="return checkPassword(this)" method="post">
                     <div>
                         <label for="first_name">First Name:</label>
                         <input type="text" id="first_name" pattern="[A-Za-z]{2,32}" placeholder="John" required>
@@ -40,11 +41,11 @@
                     </div>
                     <div>
                         <label for="password">Password:</label>
-                        <input type="password" pattern="[A-Za-z]{2,32}" id="password" required>
+                        <input type="password" name = "password" pattern="[A-Za-z]{2,32}" id="password" required>
                     </div>
                     <div>
                         <label for="confirmpassword">Confirm password:</label>
-                        <input type="password" pattern="[A-Za-z]{2,32}" id="confirmpassword" required>
+                        <input type="password" name = "confirmpassword" pattern="[A-Za-z]{2,32}" id="confirmpassword" required>
                     </div>
                     <div id="buttondiv"><button type="submit">Create account</button></div>
                 </form>

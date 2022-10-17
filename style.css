@@ -79,6 +79,7 @@ a {
     padding: 24px 0;
     font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
     letter-spacing: 0.75rem;
+    overflow: scroll;
 }
 
 #logodiv:hover {
