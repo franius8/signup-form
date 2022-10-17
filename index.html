@@ -21,14 +21,14 @@
                     <p>You <span class="emspan"><b>know</b></span> you want to.</p>
             </div>
             <div id="form">
-                <form>
+                <form action="#" method="post">
                     <div>
                         <label for="first_name">First Name:</label>
-                        <input type="text" id="first_name" placeholder="John">
+                        <input type="text" id="first_name" pattern="[A-Za-z]{2-32}" placeholder="John" required>
                     </div>
                     <div>
                         <label for="last_name">Last Name:</label>
-                        <input type="text" id="last_name" placeholder="Doe">
+                        <input type="text" id="last_name" pattern="[A-Za-z]{2-32}" placeholder="Doe">
                     </div>
                     <div>
                         <label for="user_email">Email Address:</label>
@@ -36,19 +36,20 @@
                     </div>
                     <div>
                         <label for="phone">Phone:</label>
-                        <input type="number" id="phone" placeholder="123-456-789">
+                        <input type="number" pattern="[0-9]{9}" id="phone" placeholder="123456789">
                     </div>
                     <div>
                         <label for="password">Password:</label>
-                        <input type="password" id="password">
+                        <input type="password" pattern="[A-Za-z]{2-32}" id="password">
                     </div>
                     <div>
                         <label for="confirmpassword">Confirm password:</label>
-                        <input type="password" id="confirmpassword">
+                        <input type="password" pattern="[A-Za-z]{2-32}" id="confirmpassword">
                     </div>
+                    <div id="buttondiv"><button type="submit">Create account</button></div>
                 </form>
             </div>
-            <button>Create account</button>
+            
         </div>
     </div>
 </body>

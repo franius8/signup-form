@@ -88,7 +88,14 @@ form > * {
     row-gap: 8px;
 }
 
+#buttondiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 button {
+    width: 40%;
     margin: 32px;
     padding: 16px 48px;
     font-family: inherit;
@@ -113,4 +120,11 @@ form div input {
     font-size: 1rem;
     border: 1px solid rgb(200, 200, 200);
     border-radius: 5px;
+}
+
+form div input:focus {
+    background-color: rgba(235, 101, 39, 0.2);
+    outline: none !important;
+    border-color: rgb(235, 101, 39);
+    box-shadow: 0 0 5px rgb(235, 101, 39);
 }
